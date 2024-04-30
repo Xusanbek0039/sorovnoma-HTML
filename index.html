@@ -7,7 +7,6 @@
     <style>
          body {
             font-family: Arial, sans-serif;
-        background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.matchoffice.in%2Flease%2Fcoworking%2Fmumbai-central%2Fkontor-space-69934&psig=AOvVaw1Ot8KwwAO70b13Kg-4OW8x&ust=1714590764210000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJi4kb7S6oUDFQAAAAAdAAAAABAE);
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,15 +15,18 @@
             height: 100vh;
         }
         #surveyForm {
-            background-color: #fff;
+            /* background-color: #fff; */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             width: 90%;
             max-width: 400px;
+            background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*9vMPXxkztKZuZr5u-NtWZw.jpeg);
+        background-size: cover;
         }
         h1 {
             text-align: center;
+            color: #fff;
         }
         .radio-inline {
             display: inline-block;
@@ -33,6 +35,7 @@
         label {
             display: block;
             margin-bottom: 10px;
+            color: #fff;
         }
         input[type="text"],
         input[type="role"],
@@ -100,23 +103,23 @@
         <br>
         <br>
         <label for="name">Ismingiz:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" placeholder="Ism Familiya" id="name" name="name" required>
 
-        <label for="phoneNumber">Telefon raqamingiz:</label>
-        <input type="phoneNumber" id="phoneNumber" name="phoneNumber" required>
+        <label for="phoneNumber">Tug'ilgan sana:</label>
+        <input type="date" id="phoneNumber" name="phoneNumber" placeholder="Tug'ilgan sanan" required>
 
-        <label for="role">Lavozimingiz:</label>
-        <input type="role" id="role" name="role" required>
+        <label for="role">A'loqa uchun raqam:</label>
+        <input type="role" id="role" name="role" placeholder="A'loqa uchun raqam" required>
 
-        <label for="region">Region:</label>
-        <input type="region" id="region" name="region" required>
+        <label for="region">Sizga kerakli bo'lgan yo'nalish:</label>
+        <input type="region" placeholder="Yo'nalish" id="region" name="region" required>
 
-        <label for="date">Obyektni topshirish muddati:</label>
+        <label for="date">Dars boshlash sanasi:</label>
         <input type="date" id="date" name="date" required>
 
         
-        <label for="comment">Kamchiliklar:</label>
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        <label for="comment">Izoh va fikr:</label>
+        <textarea id="comment" placeholder="Sizga kurs nima uchun zarur?" name="comment" rows="4" cols="50"></textarea>
         <button type="submit" id="submitButton" style="background-color: #4caf50; color: #fff; width: 100%; padding: 10px 40px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;"> 👉 Yuborish 👈 </button>
         <div class="loader" id="loader" style="display: none;"></div>
     </form>
